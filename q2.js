@@ -18,12 +18,12 @@ function censorBadWords(inputStr, badWords) {
 var input = inputStr.split(" ");
 
   for (var i = 0; i < input.length; i++) {
-    for (var x = 0; x < badWords; x++) {
+    for (var x = 0; x < badWords.length; x++) {
        if (input[i]==badWords[x]){
          input[i]= "*CENSORED*";
        }// do this
 }
-var ans = input.join();
+var ans = input.join(" ");
        // do this
 }
 return ans;
